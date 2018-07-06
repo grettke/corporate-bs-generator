@@ -1,10 +1,9 @@
 ;;; corporate-bs-generator.el --- Generate random corporate buzz phrases  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2018  Grant Rettke, Jann Sharpe
+;; Copyright (C) 2018  Grant Rettke <gcr@wisdomandwonder.com>
 ;; Copyright (C) 2018  Jann Sharpe <sstarwoman@hotmail.com>
 
 ;; Author: Grant Rettke <gcr@wisdomandwonder.com>
-;; Author: Jann Sharpe <sstarwoman@hotmail.com>
 ;; Homepage: https://github.com/grettke/corporate-bs-generator
 ;; URL: http://raw.githubusercontent.com/grettke/corporate-bs-generator/master/corporate-bs-generator.el
 ;; Keywords: games
