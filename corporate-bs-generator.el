@@ -439,5 +439,24 @@
    )
   "Pool of nouns.")
 
+;; Functions
+
+(defun corporate-bs-generator--random-parts-of-speech (parts)
+  (let* ((ln (length parts))
+         (rnd (random (length parts)))
+         (result (nth rnd parts)))
+    result))
+
+;; Features
+
+(defun corporate-bs-generator-create ()
+  "Generate a random corporate buzz phrase."
+  (interactive)
+  (let* ((adverb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adverbs))
+         (verb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--verbs))
+         (adjective (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adjectives))
+         (noun (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--nouns)))
+    (message "%s %s %s %s" adverb verb adjective noun)))
+
 (provide 'corporate-bs-generator)
 ;;; corporate-bs-generator.el ends here
