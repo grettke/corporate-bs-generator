@@ -488,6 +488,7 @@
 ;; Functions
 
 (defun corporate-bs-generator--random-parts-of-speech (parts)
+  "Return a random value from the parts of speech list PARTS."
   (let* ((ln (length parts))
          (rnd (random ln))
          (result (nth rnd parts)))
