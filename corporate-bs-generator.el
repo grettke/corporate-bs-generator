@@ -114,6 +114,7 @@
 
 (defconst corporate-bs-generator--verbs
   (list
+   "actualize"
    "administrate"
    "aggregate"
    "architect"
@@ -213,7 +214,6 @@
    "utilize"
    "visualize"
    "whiteboard"
-   "actualize"
    )
   "Pool of verbs.")
 
