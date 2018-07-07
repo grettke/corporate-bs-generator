@@ -489,7 +489,7 @@
 
 (defun corporate-bs-generator--random-parts-of-speech (parts)
   (let* ((ln (length parts))
-         (rnd (random (length parts)))
+         (rnd (random ln))
          (result (nth rnd parts)))
     result))
 
