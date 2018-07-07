@@ -7,6 +7,7 @@
 ;; Homepage: https://github.com/grettke/corporate-bs-generator
 ;; URL: http://raw.githubusercontent.com/grettke/corporate-bs-generator/master/corporate-bs-generator.el
 ;; Version: 0.9
+;; Package-Requires: ((emacs "24"))
 ;; Keywords: games
 
 ;; This program is free software; you can redistribute it and/or modify
