@@ -504,8 +504,12 @@
   (let* ((adverb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adverbs))
          (verb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--verbs))
          (adjective (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adjectives))
-         (noun (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--nouns)))
-    (message "%s %s %s %s" adverb verb adjective noun)))
+         (noun (corporate-bs-generator--random-parts-of-speech
+                corporate-bs-generator--nouns))
+         (result (format "%s %s %s %s" adverb verb adjective noun)))
+    (message "%s %s %s %s" adverb verb adjective noun)
+    (when (equal current-prefix-arg '(4)) (insert result))
+    (when (equal current-prefix-arg '(16)) (kill-new result))))
 
 (provide 'corporate-bs-generator)
 ;;; corporate-bs-generator.el ends here
