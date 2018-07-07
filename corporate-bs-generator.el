@@ -31,6 +31,16 @@
 ;; ahead in the industry.
 ;;
 ;; Useful in elevator pitches, business meetings, and most organizational events.
+;;
+;; Examples
+;;
+;; * _proactively provide access to seamless core competencies_
+;;
+;; * _objectively expedite effective sprints_
+;;
+;; * _quickly cultivate equity invested resources_
+;;
+;; * _globally iterate on-demand ideas_
 
 ;; Usage:
 ;;
