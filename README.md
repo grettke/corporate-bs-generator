@@ -1,7 +1,7 @@
 # corporate-bs-generator - Generate random corporate buzz phrases
 
 *Author:* Grant Rettke <gcr@wisdomandwonder.com><br>
-*URL:* [http://raw.githubusercontent.com/grettke/corporate-bs-generator/master/corporate-bs-generator.el](http://raw.githubusercontent.com/grettke/corporate-bs-generator/master/corporate-bs-generator.el)<br>
+*Version:* 0.9<br>
 
 ## Overview
 
