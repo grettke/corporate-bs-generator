@@ -517,7 +517,7 @@
          (noun (corporate-bs-generator--random-parts-of-speech
                 corporate-bs-generator--nouns))
          (result (format "%s %s %s %s" adverb verb adjective noun)))
-    (message "%s %s %s %s" adverb verb adjective noun)
+    (message "%s" result)
     (when (equal current-prefix-arg '(4)) (insert result))
     (when (equal current-prefix-arg '(16)) (kill-new result))))
 
