@@ -509,7 +509,13 @@
 ;; Features
 
 (defun corporate-bs-generator-create ()
-  "Generate a random corporate buzz phrase."
+  "Generate a random corporate buzz phrase.
+
+Displays it in a message and return it.
+
+With one prefix argument insert the string.
+
+With two prefix arguments add the string to the kill-ring."
   (interactive)
   (let* ((adverb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adverbs))
          (verb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--verbs))
@@ -519,7 +525,8 @@
          (result (format "%s %s %s %s" adverb verb adjective noun)))
     (message "%s" result)
     (when (equal current-prefix-arg '(4)) (insert result))
-    (when (equal current-prefix-arg '(16)) (kill-new result))))
+    (when (equal current-prefix-arg '(16)) (kill-new result))
+    result))
 
 (provide 'corporate-bs-generator)
 ;;; corporate-bs-generator.el ends here
