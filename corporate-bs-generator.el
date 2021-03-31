@@ -506,6 +506,17 @@
          (result (nth rnd parts)))
     result))
 
+(defun corporate-bs-generator--make ()
+  "Make the motto."
+  (interactive)
+  (let* ((adverb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adverbs))
+         (verb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--verbs))
+         (adjective (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adjectives))
+         (noun (corporate-bs-generator--random-parts-of-speech
+                corporate-bs-generator--nouns))
+         (result (format "%s %s %s %s" adverb verb adjective noun)))
+        result))
+
 ;; Features
 
 (defun corporate-bs-generator-create ()
@@ -517,12 +528,7 @@ With one prefix argument insert the string.
 
 With two prefix arguments add the string to the kill-ring."
   (interactive)
-  (let* ((adverb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adverbs))
-         (verb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--verbs))
-         (adjective (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adjectives))
-         (noun (corporate-bs-generator--random-parts-of-speech
-                corporate-bs-generator--nouns))
-         (result (format "%s %s %s %s" adverb verb adjective noun)))
+  (let* ((result (corporate-bs-generator--make)))
     (message "%s" result)
     (when (equal current-prefix-arg '(4)) (insert result))
     (when (equal current-prefix-arg '(16)) (kill-new result))
