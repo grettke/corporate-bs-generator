@@ -506,7 +506,7 @@
          (result (nth rnd parts)))
     result))
 
-(defun corporate-bs-generator--make ()
+(defun corporate-bs-generator-make ()
   "Make the motto."
   (interactive)
   (let* ((adverb (corporate-bs-generator--random-parts-of-speech corporate-bs-generator--adverbs))
