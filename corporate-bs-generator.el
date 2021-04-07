@@ -528,7 +528,7 @@ With one prefix argument insert the string.
 
 With two prefix arguments add the string to the kill-ring."
   (interactive)
-  (let* ((result (corporate-bs-generator--make)))
+  (let* ((result (corporate-bs-generator-make)))
     (message "%s" result)
     (when (equal current-prefix-arg '(4)) (insert result))
     (when (equal current-prefix-arg '(16)) (kill-new result))
